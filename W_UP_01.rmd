@@ -60,10 +60,14 @@ favstats(pushups~position,data=mydata)
 ```
 
 
-a cahrt depicting the Mean,Median and Mode of those who do line position and those that do Skill. showing that again those who do things by skill are more successful than those in line.
+a chart depicting the Mean,Median and Mode of those who do line position and those that do Skill. showing that again those who do things by skill are more successful than those in line.
 ## Inferential Results
 
 <!--State hypothesis clearly. Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc. Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
+```{r}
+t.test(pushups~position,data=mydata)
+```
+this shows that our p-val. is .000009421, our t is in the negative with -5.4341, and our df is 27.079. with the alt. hypothesis being true difference in means between group line and skill is not equal to 0. if the value is greater than .05 you fail the hypothesis. since the p-val. is small so we reject the null hypothesis. I'm a solid 95% sure that skill does more push-ups
 
 
 # Discussion and Conclusion
