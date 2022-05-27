@@ -30,6 +30,7 @@ $H_A$: The average number of pushups done by line players is statistically diffe
 # Methods
 
 <!--Decide on your methods: use "variable analysis" or other appropriate descriptors. Make sure to choose at least one graphical method and at least one numerical method.!-->
+
 Positions are a Categorical variable. pushups is a numerical variable. I will do an analysis that explains push-ups based on position
 
 
@@ -60,17 +61,20 @@ favstats(pushups~position,data=mydata)
 ```
 
 
-a chart depicting the Mean,Median and Mode of those who do line position and those that do Skill. showing that again those who do things by skill are more successful than those in line.
+A chart depicting the Mean,Median and Mode of those who do line position and those that do Skill. showing that again those who do things by skill are more successful than those in line.
+
+
 ## Inferential Results
 
 <!--State hypothesis clearly. Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc. Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
 ```{r}
 t.test(pushups~position,data=mydata)
 ```
-this shows that our p-val. is .000009421, our t is in the negative with -5.4341, and our df is 27.079. with the alt. hypothesis being true difference in means between group line and skill is not equal to 0. if the value is greater than .05 you fail the hypothesis. since the p-val. is small so we reject the null hypothesis. I'm a solid 95% sure that skill does more push-ups
+This shows that our p-val. is .000009421, our t is in the negative with -5.4341, and our df is 27.079. with the alt. hypothesis being true difference in means between group line and skill is not equal to 0. if the value is greater than .05 you fail the hypothesis. since the p-val. is small so we reject the null hypothesis. I'm a solid 95% sure that skill does more push-ups
 
 
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here. If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason. Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
 
+The original question was this: 'Who could do the most push-ups?' the SKILL position or the LINE position under a specific amount of time? our response: based off our numerical descriptive results & our inferential result; We can see that the SKILL position can do MORE push-ups than the LINE position under any amount of time given. we used a boxplot & a table to figure out our values and percentages. The Median & average were much higher for the SKILL position than the LINE position.
