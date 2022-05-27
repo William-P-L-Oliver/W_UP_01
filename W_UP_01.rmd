@@ -70,7 +70,7 @@ A chart depicting the Mean,Median and Mode of those who do line position and tho
 ```{r}
 t.test(pushups~position,data=mydata)
 ```
-This shows that our p-val. is .000009421, our t is in the negative with -5.4341, and our df is 27.079. with the alt. hypothesis being true difference in means between group line and skill is not equal to 0. if the value is greater than .05 you fail the hypothesis. since the p-val. is small so we reject the null hypothesis. I'm a solid 95% sure that skill does more push-ups
+This shows that our p-val. is .000009421, our t is in the negative with -5.4341, and our df is 27.079. with the alt. hypothesis being true difference in means between group line and skill is not equal to 0. if the value is greater than .05 you fail the hypothesis. since the p-val. is small so we reject the null hypothesis. I'm a solid 95% sure that skill does more push-ups than Line. and if i'm wrong I'll eat my Flex tape.
 
 
 # Discussion and Conclusion
